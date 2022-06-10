@@ -1,1 +1,2 @@
 # cdk-comprehend-s3olap-go
+Go bindings for [cdk-comprehend-s3olap](https://github.com/HsiehShuJeng/cdk-comprehend-s3olap.git). These are automatically updated from the [cdk-comprehend-s3olap](https://github.com/HsiehShuJeng/cdk-comprehend-s3olap.git) repository - if you would like to report a bug or make a pull request, please submit it there.  
