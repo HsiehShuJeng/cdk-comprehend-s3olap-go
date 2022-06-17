@@ -70,7 +70,7 @@ $ cdk --init language typescript
 $ yarn add cdk-comprehend-s3olap
 ```
 
-```go
+```typescript
 import * as cdk from '@aws-cdk/core';
 import { ComprehendS3olab } from 'cdk-comprehend-s3olap';
 
