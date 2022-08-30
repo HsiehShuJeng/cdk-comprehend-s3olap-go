@@ -134,6 +134,9 @@ func (j *jsiiProxy_ComprehendS3olab) S3objectLambdaCustomerSupportArn() *string 
 func NewComprehendS3olab(scope constructs.Construct, id *string, props *ComprehendS3olabProps) ComprehendS3olab {
 	_init_.Initialize()
 
+	if err := validateNewComprehendS3olabParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ComprehendS3olab{}
 
 	_jsii_.Create(
@@ -175,6 +178,9 @@ func NewComprehendS3olab_Override(c ComprehendS3olab, scope constructs.Construct
 func ComprehendS3olab_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateComprehendS3olab_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -188,6 +194,9 @@ func ComprehendS3olab_IsConstruct(x interface{}) *bool {
 }
 
 func (c *jsiiProxy_ComprehendS3olab) GenerateS3Prefix(length *float64) *string {
+	if err := c.validateGenerateS3PrefixParameters(length); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(

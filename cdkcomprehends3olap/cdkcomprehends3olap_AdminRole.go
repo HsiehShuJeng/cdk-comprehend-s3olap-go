@@ -72,6 +72,9 @@ func (j *jsiiProxy_AdminRole) RoleName() *string {
 func NewAdminRole(scope constructs.Construct, id *string, props *AdminRoleProps) AdminRole {
 	_init_.Initialize()
 
+	if err := validateNewAdminRoleParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AdminRole{}
 
 	_jsii_.Create(
@@ -113,6 +116,9 @@ func NewAdminRole_Override(a AdminRole, scope constructs.Construct, id *string, 
 func AdminRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAdminRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

@@ -75,6 +75,9 @@ func (j *jsiiProxy_GeneralRole) RoleName() *string {
 func NewGeneralRole(scope constructs.Construct, id *string, props *GeneralRoleProps) GeneralRole {
 	_init_.Initialize()
 
+	if err := validateNewGeneralRoleParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GeneralRole{}
 
 	_jsii_.Create(
@@ -116,6 +119,9 @@ func NewGeneralRole_Override(g GeneralRole, scope constructs.Construct, id *stri
 func GeneralRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGeneralRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

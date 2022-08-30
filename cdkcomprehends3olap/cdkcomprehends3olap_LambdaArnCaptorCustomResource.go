@@ -50,6 +50,9 @@ func (j *jsiiProxy_LambdaArnCaptorCustomResource) Node() constructs.Node {
 func NewLambdaArnCaptorCustomResource(scope constructs.Construct, id *string, props *LambdaArnCaptorResourceProps) LambdaArnCaptorCustomResource {
 	_init_.Initialize()
 
+	if err := validateNewLambdaArnCaptorCustomResourceParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_LambdaArnCaptorCustomResource{}
 
 	_jsii_.Create(
@@ -91,6 +94,9 @@ func NewLambdaArnCaptorCustomResource_Override(l LambdaArnCaptorCustomResource, 
 func LambdaArnCaptorCustomResource_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateLambdaArnCaptorCustomResource_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

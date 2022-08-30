@@ -48,6 +48,9 @@ func (j *jsiiProxy_RedactionLambda) StackName() *string {
 func NewRedactionLambda(scope constructs.Construct, id *string, props *RedactionLambdaProps) RedactionLambda {
 	_init_.Initialize()
 
+	if err := validateNewRedactionLambdaParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RedactionLambda{}
 
 	_jsii_.Create(
@@ -89,6 +92,9 @@ func NewRedactionLambda_Override(r RedactionLambda, scope constructs.Construct, 
 func RedactionLambda_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRedactionLambda_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

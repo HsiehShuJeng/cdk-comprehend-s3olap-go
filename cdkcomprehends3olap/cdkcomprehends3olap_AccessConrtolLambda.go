@@ -48,6 +48,9 @@ func (j *jsiiProxy_AccessConrtolLambda) StackName() *string {
 func NewAccessConrtolLambda(scope constructs.Construct, id *string, props *AccessConrtolLambdaProps) AccessConrtolLambda {
 	_init_.Initialize()
 
+	if err := validateNewAccessConrtolLambdaParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AccessConrtolLambda{}
 
 	_jsii_.Create(
@@ -89,6 +92,9 @@ func NewAccessConrtolLambda_Override(a AccessConrtolLambda, scope constructs.Con
 func AccessConrtolLambda_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAccessConrtolLambda_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

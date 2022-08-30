@@ -72,6 +72,9 @@ func (j *jsiiProxy_BillingRole) RoleName() *string {
 func NewBillingRole(scope constructs.Construct, id *string, props *AdminRoleProps) BillingRole {
 	_init_.Initialize()
 
+	if err := validateNewBillingRoleParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_BillingRole{}
 
 	_jsii_.Create(
@@ -113,6 +116,9 @@ func NewBillingRole_Override(b BillingRole, scope constructs.Construct, id *stri
 func BillingRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateBillingRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(

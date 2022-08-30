@@ -72,6 +72,9 @@ func (j *jsiiProxy_CustSupportRole) RoleName() *string {
 func NewCustSupportRole(scope constructs.Construct, id *string, props *AdminRoleProps) CustSupportRole {
 	_init_.Initialize()
 
+	if err := validateNewCustSupportRoleParameters(scope, id, props); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CustSupportRole{}
 
 	_jsii_.Create(
@@ -113,6 +116,9 @@ func NewCustSupportRole_Override(c CustSupportRole, scope constructs.Construct, 
 func CustSupportRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCustSupportRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
