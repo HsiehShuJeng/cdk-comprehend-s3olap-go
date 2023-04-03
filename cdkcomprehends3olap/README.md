@@ -122,7 +122,7 @@ $ python -m pip install --upgrade virtualenv
 $ cdk init --language python
 # make packages installed locally instead of globally
 $ source .venv/bin/activate
-$ # add "cdk-comprehend-s3olap==0.0.4" into `setup.py`
+$ # add "cdk-comprehend-s3olap==2.0.113" into `setup.py`
 $ python -m pip install --upgrade -r requirements.txt
 ```
 
@@ -140,8 +140,8 @@ $ mvn package # If you include the construct, you need to tweak the test case fo
 .
 <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <cdk.version>1.112.0</cdk.version>
-    <constrcut.verion>0.0.4</constrcut.verion>
+    <cdk.version>2.72.1</cdk.version>
+    <constrcut.verion>2.0.113</constrcut.verion>
     <junit.version>5.7.1</junit.version>
 </properties>
 .
@@ -221,7 +221,7 @@ You could also refer to [here](https://github.com/HsiehShuJeng/cdk-comprehend-s3
 
 ```bash
 $ cdk init --language csharp
-$ dotnet add src/Csharp package Comprehend.S3olap --version 0.0.8
+$ dotnet add src/Csharp package Comprehend.S3olap --version 2.0.113
 ```
 
 ```cs
