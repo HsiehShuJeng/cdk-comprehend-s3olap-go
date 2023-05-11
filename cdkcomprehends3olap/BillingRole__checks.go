@@ -1,6 +1,5 @@
 //go:build !no_runtime_type_checking
 
-// A constrcut for PII and redaction scenarios with Amazon Comprehend and S3 Object Lambda
 package cdkcomprehends3olap
 
 import (
