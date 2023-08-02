@@ -19,16 +19,24 @@ type ComprehendS3olabProps struct {
 	// The directory path where `files/access_control/*.txt` and `files/redaction/*.txt` will be put.
 	//
 	// DO NOT INCLUDE `/` in the end.
+	// Default: __dirname.
+	//
 	ExampleFileDir *string `field:"optional" json:"exampleFileDir" yaml:"exampleFileDir"`
 	// The manageable properties for the IAM role used to access the `survey-results.txt` data.
 	GeneralRoleConfig *GeneralRoleProps `field:"optional" json:"generalRoleConfig" yaml:"generalRoleConfig"`
 	// For distinguish test and normal deployment.
+	// Default: true.
+	//
 	GenerateRandomCharacters *bool `field:"optional" json:"generateRandomCharacters" yaml:"generateRandomCharacters"`
 	// The names of the S3 access points for the access control case and redaction case.
 	S3AccessPointNames *S3AccessPointNames `field:"optional" json:"s3AccessPointNames" yaml:"s3AccessPointNames"`
 	// The prefix attached to the name of the S3 bucket where you are going to explore the S3 Object Lambda pertaining to the access control case.
+	// Default: 6 random words.
+	//
 	SurveyBucketPrefix *string `field:"optional" json:"surveyBucketPrefix" yaml:"surveyBucketPrefix"`
 	// The prefix attached to the name of the S3 bucket where you are going to explore the S3 Object Lambda pertaining to the redaction case.
+	// Default: 6 random words.
+	//
 	TranscriptsBucketPrefix *string `field:"optional" json:"transcriptsBucketPrefix" yaml:"transcriptsBucketPrefix"`
 }
 
